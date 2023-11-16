@@ -5,27 +5,64 @@
 }
 
 #titleContainer {
-  margin: 25px auto;
+  height: 100px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 1%,
+    rgba(105, 105, 105, 1) 100%
+  );
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #messageContainer {
-  margin: 100px auto;
+  margin: 50px auto;
+  border: 4px solid black;
+  border-radius: 10px;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message {
+  font-weight: bold;
 }
 
 #choiceBoxContainer {
   display: flex;
   justify-content: space-around;
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 .choiceBox {
-  height: 100px;
-  width: 100px;
-  background-color: red;
+  height: 200px;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  margin: auto;
+  font-size: 100px;
 }
 
 #scoresContainer {
   display: flex;
   justify-content: space-around;
   margin: 50px auto;
+}
+
+#replayButton {
+  height: 50px;
+  width: 150px;
+  border-radius: 5px;
+  font-weight: bold;
 }

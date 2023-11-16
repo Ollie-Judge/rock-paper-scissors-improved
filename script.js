@@ -1,9 +1,12 @@
 let rock = document.getElementById("rock");
 let paper = document.getElementById("paper");
 let scissors = document.getElementById("scissors");
+
 let userScoreOutput = document.getElementById("userScore");
 let computerScoreOutput = document.getElementById("computerScore");
+
 let message = document.getElementById("message");
+
 let replayButton = document.getElementById("replayButton");
 
 let userChoice;
@@ -73,6 +76,7 @@ const checkEndGame = (userScore, computerScore) => {
   if (userScore === 3 || computerScore === 3) {
     document.body.removeEventListener("click", document.body.fn, false);
     console.log("removed event listener");
+    message.innerHTML = "Game over! Click replay to play again";
     replayButton.addEventListener("click", function (e) {
       location.reload();
     });
